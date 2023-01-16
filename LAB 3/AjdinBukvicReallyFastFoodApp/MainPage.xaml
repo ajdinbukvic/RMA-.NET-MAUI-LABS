@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjdinBukvicReallyFastFoodApp.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid RowDefinitions="Auto,Auto,Auto">
+                <Image Source="reklama.png" HeightRequest="320" Aspect="AspectFill"></Image>
+                <Label Grid.Row="0" Text="zaista brzo" TextTransform="Uppercase" FontSize="Micro" HorizontalOptions="Center" Margin="10" TextColor="Black"/>
+                <Label Grid.Row="0" Text="naručivanje i dostava hrane" HorizontalOptions="Center" FontSize="Large" Margin="18" FontAttributes="Bold" TextColor="Black"/>
+                <Frame Grid.Row="1" BackgroundColor="White" BorderColor="White" HeightRequest="360">
+                    <VerticalStackLayout Margin="0,30,0,0" HorizontalOptions="Center">
+                        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="42" RowSpacing="8">
+                            <Image Grid.Column="0" Source="{Binding Jela[0].Icon}" HeightRequest="24"></Image>
+                            <Image Grid.Column="1" Source="{Binding Jela[1].Icon}" HeightRequest="24"></Image>
+                            <Image Grid.Column="2" Source="{Binding Jela[2].Icon}" HeightRequest="24"></Image>
+                            <Image Grid.Column="3" Source="{Binding Jela[3].Icon}" HeightRequest="24"></Image>
+
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding Jela[0].Naziv}" HorizontalOptions="Center" TextColor="Black"></Label>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Jela[1].Naziv}" HorizontalOptions="Center" TextColor="Black"></Label>
+                            <Label Grid.Row="1" Grid.Column="2" Text="{Binding Jela[2].Naziv}" HorizontalOptions="Center" TextColor="Black"></Label>
+                            <Label Grid.Row="1" Grid.Column="3" Text="{Binding Jela[3].Naziv}" HorizontalOptions="Center" TextColor="Black"></Label>
+                            
+                            <Label Grid.Row="2" Grid.Column="0" Text="|" HorizontalOptions="Center" TextColor="Orange"></Label>
+                            <Label Grid.Row="2" Grid.Column="1" Text="|" HorizontalOptions="Center" TextColor="Gray"></Label>
+                            <Label Grid.Row="2" Grid.Column="2" Text="|" HorizontalOptions="Center" TextColor="Gray"></Label>
+                            <Label Grid.Row="2" Grid.Column="3" Text="|" HorizontalOptions="Center" TextColor="Gray"></Label>
+
+                            <Label Grid.Row="3" Grid.Column="0" Text="{Binding Jela[0].Cijena}" HorizontalOptions="Center" TextColor="Black"></Label>
+                            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Jela[1].Cijena}" HorizontalOptions="Center" TextColor="Gray"></Label>
+                            <Label Grid.Row="3" Grid.Column="2" Text="{Binding Jela[2].Cijena}" HorizontalOptions="Center" TextColor="Gray"></Label>
+                            <Label Grid.Row="3" Grid.Column="3" Text="{Binding Jela[3].Cijena}" HorizontalOptions="Center" TextColor="Gray"></Label>
+
+                            <Frame Grid.Row="4" Grid.Column="0" HeightRequest="24" WidthRequest="24" CornerRadius="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center">
+                                <Image Source="checkmark.png" Aspect="AspectFill" HeightRequest="24" WidthRequest="24"></Image>
+                            </Frame>
+                            <Frame Grid.Row="4" Grid.Column="1" HeightRequest="24" WidthRequest="24" CornerRadius="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center">
+                                <Image Source="checkmark.png" Aspect="AspectFill" HeightRequest="24" WidthRequest="24"></Image>
+                            </Frame>
+                            <Frame Grid.Row="4" Grid.Column="2" HeightRequest="24" WidthRequest="24" CornerRadius="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center">
+                                <Image Source="checkmark.png" Aspect="AspectFill" HeightRequest="24" WidthRequest="24"></Image>
+                            </Frame>
+                            <Frame Grid.Row="4" Grid.Column="3" HeightRequest="24" WidthRequest="24" CornerRadius="50" BackgroundColor="WhiteSmoke" HorizontalOptions="Center">
+                                <Image Source="checkmark.png" Aspect="AspectFill" HeightRequest="24" WidthRequest="24"></Image>
+                            </Frame>
+
+                            <Frame Grid.Row="5" Grid.Column="0" BorderColor="Gray" WidthRequest="60" HeightRequest="30">
+                                <Entry x:Name="jelo1" VerticalOptions="Center" HorizontalOptions="Center" Placeholder="kol" Keyboard="Numeric" TextColor="Black"></Entry>
+                            </Frame>
+                            <Frame Grid.Row="5" Grid.Column="1" BorderColor="Gray" WidthRequest="60" HeightRequest="30">
+                                <Entry x:Name="jelo2" VerticalOptions="Center" HorizontalOptions="Center" Placeholder="kol" Keyboard="Numeric" TextColor="Black"></Entry>
+                            </Frame>
+                            <Frame Grid.Row="5" Grid.Column="2" BorderColor="Gray" WidthRequest="60" HeightRequest="30">
+                                <Entry x:Name="jelo3" VerticalOptions="Center" HorizontalOptions="Center" Placeholder="kol" Keyboard="Numeric" TextColor="Black"></Entry>
+                            </Frame>
+                            <Frame Grid.Row="5" Grid.Column="3" BorderColor="Gray" WidthRequest="60" HeightRequest="30">
+                                <Entry x:Name="jelo4" VerticalOptions="Center" HorizontalOptions="Center" Placeholder="kol" Keyboard="Numeric" TextColor="Black"></Entry>
+                            </Frame>
+
+                            <Frame Grid.Row="6" Grid.Column="0" HeightRequest="56" WidthRequest="56" CornerRadius="50" BackgroundColor="Orange" HorizontalOptions="Center" BorderColor="White">
+                                <Label Text="{Binding Jela[0].Kalorije}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="8"></Label>
+                            </Frame>
+                            <Frame Grid.Row="6" Grid.Column="1" HeightRequest="56" WidthRequest="56" CornerRadius="50" BackgroundColor="Orange" HorizontalOptions="Center" BorderColor="White">
+                                <Label Text="{Binding Jela[1].Kalorije}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="8"></Label>
+                            </Frame>
+                            <Frame Grid.Row="6" Grid.Column="2" HeightRequest="56" WidthRequest="56" CornerRadius="50" BackgroundColor="Orange" HorizontalOptions="Center" BorderColor="White">
+                                <Label Text="{Binding Jela[2].Kalorije}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="8"></Label>
+                            </Frame>
+                            <Frame Grid.Row="6" Grid.Column="3" HeightRequest="56" WidthRequest="56" CornerRadius="50" BackgroundColor="Orange" HorizontalOptions="Center" BorderColor="White">
+                                <Label Text="{Binding Jela[3].Kalorije}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontSize="8"></Label>
+                            </Frame>
+
+                            <Label Grid.Row="7" Grid.Column="0" Text="Calories" HorizontalOptions="Center" FontSize="12" TextColor="Black"></Label>
+                            <Label Grid.Row="7" Grid.Column="1" Text="Calories" HorizontalOptions="Center" FontSize="12" TextColor="Black"></Label>
+                            <Label Grid.Row="7" Grid.Column="2" Text="Calories" HorizontalOptions="Center" FontSize="12" TextColor="Black"></Label>
+                            <Label Grid.Row="7" Grid.Column="3" Text="Calories" HorizontalOptions="Center" FontSize="12" TextColor="Black"></Label>
+
+                            <Label Grid.Row="8" Grid.Column="0" Text="Kcal" HorizontalOptions="Center" FontSize="10" TextColor="Gray"></Label>
+                            <Label Grid.Row="8" Grid.Column="1" Text="Kcal" HorizontalOptions="Center" FontSize="10" TextColor="Gray"></Label>
+                            <Label Grid.Row="8" Grid.Column="2" Text="Kcal" HorizontalOptions="Center" FontSize="10" TextColor="Gray"></Label>
+                            <Label Grid.Row="8" Grid.Column="3" Text="Kcal" HorizontalOptions="Center" FontSize="10" TextColor="Gray"></Label>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Grid.Row="1" BackgroundColor="WhiteSmoke" HorizontalOptions="Center" HeightRequest="65"  CornerRadius="40" WidthRequest="180" Margin="0,-340,0,0">
+                    <Label Text="Dnevni meni" HorizontalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" FontSize="18"/>
+                </Frame>
+            </Grid>
+            <Frame BackgroundColor="LightGray" HeightRequest="280" BorderColor="White">
+                <VerticalStackLayout Spacing="4">
+                    <FlexLayout JustifyContent="Center" HeightRequest="24">
+                        <Image Source="zvjezda.png" HeightRequest="18"></Image>
+                        <Label Text="Dostava" FontAttributes="Bold" FontSize="Medium" TextColor="Black"></Label>
+                        <Image Source="zvjezda.png" HeightRequest="18"></Image>
+                    </FlexLayout>
+                    <Label Text="20 mins - Besplatna dostava iznad 15 KM" HorizontalOptions="Center" TextColor="Gray"></Label>
+                    <Switch x:Name="dostava" Toggled="OnToggled" HorizontalOptions="Center" OnColor="Orange" ThumbColor="White"></Switch>
+                    <Picker x:Name="odabranoNaselje" IsEnabled="False" ItemDisplayBinding="{Binding Naziv}" Title="Ulica/Naselje" TitleColor="Black" HorizontalOptions="Center" BackgroundColor="Gray" WidthRequest="320" TextColor="Black"></Picker>
+                    <Button x:Name="naruci" Clicked="OnClicked" Text="Naruči" TextTransform="Uppercase" BackgroundColor="Black" TextColor="White" CornerRadius="50" WidthRequest="160" HeightRequest="60" Margin="0,20,0,0"></Button>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
