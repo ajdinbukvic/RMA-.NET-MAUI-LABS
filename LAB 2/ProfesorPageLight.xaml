@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjdinBukvic_RMA_LAB2.ProfesorPageLight"
+             Title="ProfesorPageLight">
+    <VerticalStackLayout Padding="20" Spacing="4" BackgroundColor="#F3E0B5">
+        <FlexLayout JustifyContent="SpaceAround" AlignItems="Center" Margin="10,10,0,0" HeightRequest="140">
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Frame FlexLayout.Grow="1" Margin="0,10,0,0" BorderColor="White" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" HasShadow="False" CornerRadius="55" Padding="0" IsClippedToBounds="True">
+                    <Image Source="Resources/Images/profesor.jpg" Aspect="AspectFill"/>
+                </Frame>
+                <Label x:Name="ImePrezime3" TextColor="#FFAE6D" FontAttributes="Bold" Text="@imeprezime" Margin="0,10,0,0"/>
+               </VerticalStackLayout>
+            <FlexLayout FlexLayout.Grow="1" Direction="Column" JustifyContent="Center" AlignItems="Center">
+                <Label x:Name="Citations" TextColor="#FFAE6D" Text="23" FontAttributes="Bold"/>
+                <Label FontSize="14" TextColor="#E3C770" Text="Citations"/>
+            </FlexLayout>
+            <FlexLayout FlexLayout.Grow="1" Direction="Column" JustifyContent="Center" AlignItems="Center">
+                <Label x:Name="Reviews" TextColor="#FFAE6D" Text="87" FontAttributes="Bold"/>
+                <Label FontSize="14" TextColor="#E3C770" Text="Reviews"/>
+            </FlexLayout>
+        </FlexLayout>
+        <Button Text="Edit profile" TextColor="#F3E0B5" BackgroundColor="#E3C770" Margin="0,20,0,20"></Button>
+        <Editor FontAttributes="Bold,Italic" Placeholder="Write new post..." PlaceholderColor="#FFAE6D" TextColor="#FFAE6D" HeightRequest="100" BackgroundColor="White"></Editor>
+        <FlexLayout HeightRequest="50" WidthRequest="360" JustifyContent="SpaceBetween" Margin="0,10,0,0">
+            <Frame CornerRadius="20" BorderColor="White">
+                <Label FontSize="8" Text="#technology" TextColor="#FFAE6D"></Label>
+            </Frame>
+            <Frame CornerRadius="20" BorderColor="White">
+                <Label FontSize="8" Text="#software" TextColor="#FFAE6D"></Label>
+            </Frame>
+            <Frame CornerRadius="20" BorderColor="White">
+                <Label FontSize="8" Text="#science" TextColor="#FFAE6D"></Label>
+            </Frame>
+            <Frame CornerRadius="20" BorderColor="White">
+                <Label FontSize="8" Text="#education" TextColor="#FFAE6D"></Label>
+            </Frame>
+        </FlexLayout>
+        <Button Text="Publish" TextColor="#F3E0B5" BackgroundColor="#E3C770" Margin="0,4,0,0" WidthRequest="90"></Button>
+        <Label TextColor="#FFAE6D" Text="Daily activity"/>
+        <ProgressBar Progress="0.7" ProgressColor="#FFAE6D"></ProgressBar>
+        <Label TextColor="#FFAE6D" Text="Weekly comments"/>
+        <ProgressBar Progress="0.4" ProgressColor="#FFAE6D"></ProgressBar>
+        <Label TextColor="#FFAE6D" Text="Last post" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Frame BorderColor="White" HeightRequest="160" HorizontalOptions="Center" Margin="0,10,0,0" BackgroundColor="#E3C770">
+            <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="Auto, Auto" RowSpacing="10" ColumnSpacing="10" HeightRequest="160" WidthRequest="200" Margin="0,10,0,0">
+                <Label x:Name="Title" Grid.Row="0" Grid.Column="0" Text="Title" TextColor="White"/>
+                <Label x:Name="Date" Grid.Row="1" Grid.Column="0" Text="Date" TextColor="White"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Notifications?" TextColor="White"/>
+                <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Source="Resources/Images/robot.jpg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100"/>
+                <CheckBox Grid.Row="2" Grid.Column="2" IsChecked="true" Color="White"></CheckBox>
+            </Grid>
+        </Frame>
+        <FlexLayout HeightRequest="40" AlignItems="Center" JustifyContent="SpaceAround" Margin="0,10,0,0">
+            <Label TextColor="#FFAE6D" Text="Allow people to send you messages?" FontAttributes="Bold"/>
+            <RadioButton Content="Yes" IsChecked="true" BorderColor="#E3C770"></RadioButton>
+            <RadioButton Content="No" IsChecked="false" BorderColor="#E3C770"></RadioButton>
+        </FlexLayout>
+    </VerticalStackLayout>
+</ContentPage>

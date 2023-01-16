@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjdinBukvic_RMA_LAB2.StudentPageDark"
+             Title="StudentPageDark">
+    <VerticalStackLayout Padding="20" Spacing="4" BackgroundColor="#16213E">
+
+        <Frame BorderColor="#533483" VerticalOptions="Start" HeightRequest="140" HasShadow="False" CornerRadius="20" Margin="0,30,0,30" Padding="0" IsClippedToBounds="True">
+            <Image Source="Resources/Images/laptop.jpg" Aspect="AspectFill"/>
+        </Frame>
+        <Frame Margin="0,-100,0,0" BorderColor="#533483" HorizontalOptions="Center" WidthRequest="110" HeightRequest="110" HasShadow="False" CornerRadius="55" Padding="0" IsClippedToBounds="True">
+            <Image Source="Resources/Images/student.jpg" Aspect="AspectFill"/>
+        </Frame>
+        <Label x:Name="ImePrezime2" Text="Ime Prezime" FontAttributes="Bold" TextColor="#533483" HorizontalTextAlignment="Center" Margin="0,20,0,0" FontSize="22"/>
+        <Label x:Name="Lokacija2" Text="Lokacija" FontSize="15" HorizontalTextAlignment="Center" TextColor="#533483"/>
+        <Label x:Name="Godine2" Text="Godine: 20" FontSize="15" HorizontalTextAlignment="Center" TextColor="#533483"/>
+        <HorizontalStackLayout HorizontalOptions="FillAndExpand" Margin="0,20,0,0" Spacing="40" HeightRequest="80" Padding="30,0,0,0">
+            <Frame HorizontalOptions="Fill" BackgroundColor="#16213E" BorderColor="#533483">
+                <Label x:Name="Friends2" Text="Friends: 100" FontAttributes="Bold" TextColor="#0F3460" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+            <Frame HorizontalOptions="Fill" BackgroundColor="#16213E" BorderColor="#533483">
+                <Label x:Name="Followers2" Text="Followers: 999" FontAttributes="Bold" TextColor="#0F3460" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+        </HorizontalStackLayout>
+        <SearchBar Placeholder="Search chats..." PlaceholderColor="#0F3460" Margin="0,20,0,0" HorizontalOptions="FillAndExpand" TextColor="#0F3460" CancelButtonColor="#0F3460" FontAttributes="Bold"/>
+        <Label Text="Connected apps" FontSize="15" HorizontalTextAlignment="Center" TextColor="#533483" Margin="0,20,0,0"/>
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,0" Spacing="8" HeightRequest="80">
+            <Frame BackgroundColor="#16213E" WidthRequest="80" BorderColor="#533483">
+                <Image Source="Resources/Images/instagram.png" Aspect="AspectFill"/>
+            </Frame>
+            <Frame BackgroundColor="#16213E" WidthRequest="80" BorderColor="#533483">
+                <Image Source="Resources/Images/facebook.png" Aspect="AspectFill"/>
+            </Frame>
+            <Frame BackgroundColor="#16213E" WidthRequest="80" BorderColor="#533483">
+                <Image Source="Resources/Images/twitter.png" Aspect="AspectFill"/>
+            </Frame>
+            <Frame BackgroundColor="#16213E" WidthRequest="80" BorderColor="#533483">
+                <Image Source="Resources/Images/youtube.png" Aspect="AspectFill"/>
+            </Frame>
+        </HorizontalStackLayout>
+        <FlexLayout Margin="0,20,0,0" JustifyContent="SpaceAround" AlignContent="Center" HeightRequest="40">
+            <Label Text="Active status (visibility ON/OFF)" VerticalOptions="Center" TextColor="#533483"/>
+            <Switch IsToggled="true" OnColor="#0F3460" ThumbColor="#533483"></Switch>
+        </FlexLayout>
+        <Button Text="Settings" Margin="0,20,0,0" TextColor="#533483" BackgroundColor="#0F3460" HorizontalOptions="Center" WidthRequest="160"></Button>
+    </VerticalStackLayout>
+</ContentPage>
