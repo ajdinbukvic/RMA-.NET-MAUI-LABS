@@ -1,0 +1,15 @@
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\bin\Debug\net6.0\Zadatak8.exe
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\bin\Debug\net6.0\Zadatak8.deps.json
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\bin\Debug\net6.0\Zadatak8.runtimeconfig.json
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\bin\Debug\net6.0\Zadatak8.dll
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\bin\Debug\net6.0\Zadatak8.pdb
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.csproj.AssemblyReference.cache
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.AssemblyInfoInputs.cache
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.AssemblyInfo.cs
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.csproj.CoreCompileInputs.cache
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.dll
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\refint\Zadatak8.dll
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.pdb
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\Zadatak8.genruntimeconfig.cache
+C:\Users\ajdin\Desktop\AjdinBukvic_RMA_LAB1\Zadatak8\obj\Debug\net6.0\ref\Zadatak8.dll
